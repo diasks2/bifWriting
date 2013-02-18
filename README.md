@@ -36,13 +36,13 @@ Source: **WritingNext**
 Source: **InformingWriting**  
 *The Benefits of Formative Assessment* (by Steve Graham, Karen Harris, Michael Hebert)
 
-1. USE FORMATIVE WRITING ASSESSMENT TO ENHANCE STUDENTS’ WRITING
+1.) USE FORMATIVE WRITING ASSESSMENT TO ENHANCE STUDENTS’ WRITING
 
 - **Provide Feedback.** Writing improves when teachers and peers provide students with feedback about the effectiveness of their writing.
 - **Teach students how to assess their own writing.** Writing improves when students are taught to evaluate the effectiveness of their own writing.
 - **Monitor students' writing progress.** Writing improves when teachers monitor students’ progress on an ongoing basis.
 
-2. APPLY BEST PRACTICES FOR ASSESSING WRITING IN THE CLASSROOM
+2.) APPLY BEST PRACTICES FOR ASSESSING WRITING IN THE CLASSROOM
 
 - **Allow students to use the mode of writing in which they are most proficient when completing a writing assessment.** Writing improves when students are assessed in the format with whichthey are most experienced—pencil and paper, or word processing.
 - **Minimize the extent to which presentation forms such as handwriting legibility or computer printing bias judgments of writing quality.** Writing assessment improves when teachers judge the quality of student writing and do not allow factors such as handwriting or computer printing to bias their judgment.
