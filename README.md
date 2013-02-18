@@ -13,6 +13,7 @@ BiF Writing will at a minimum provide the following quantitative feedback:
 - Frequency (using our corpus) of words used in the passage
 - Originality score (compare words used to other users)
 - Number of repeated words in the passage
+- POS breakdown - number of nouns, verbs, etc.
 
 Goal: See if it is possible to identity certain quantitative heuristics that can impart some data as to the quality of the writing.
 
