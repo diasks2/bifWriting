@@ -1,7 +1,7 @@
 <%= form_for @passage do |f| %>
- 
-  <%= f.text_area :passage %>
+  	Current word count: <span id="display_count">0</span>
 
-  <%= f.submit "Submit" %>
+  	<%= f.text_area :passage, :class => "text", :id => "passage_area", :placeholder => "Start your thoughts here...", :"data-persist" => "garlic", :onKeyUp=> "word_count(this.value, hidden_count)" %>
 
+    <%= f.submit "Submit", :class => "m-btn purple" %>
 <% end %>

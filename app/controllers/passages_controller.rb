@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class PassagesController < ApplicationController
   include PassagesHelper
   def new
@@ -42,19 +43,32 @@ class PassagesController < ApplicationController
     # - Number of repeated words in the passage
     # - POS breakdown - number of nouns, verbs, etc.
 
+
+    @total_characters = @passage.passage.length
+   
+    @total_characters_nonspaces = @passage.passage.gsub(/\s+/, '').length
+   
+    @paragraph_count = @passage.passage.split(/\n\n/).length
+
     # - Number of sentences
     @num_sentences_punkt = tokenizer.sentences_from_text(@passage.passage, :output => :tokenized_sentences).length
     @num_sentences_tagger = tgr.get_sentences(@passage.passage).length
-
 
     tagged_hash = tgr.add_tags_hash(@passage.passage)
 
     # - Number of words
     @num_words_tagger = tagged_hash.length
     @num_words_punkt = tokenizer.sentences_from_text(@passage.passage, :output => :tokenized_sentences).flatten!.length
+    @num_words = @passage.passage.split.size
 
+    # - Number of paragraphs
+
+    @tag_hash = tgr.add_tags_hash(@passage.passage)
     @tagged_hash = tagged_hash.each { |k, v| tagged_hash[k] = pos_convert(v) }
-   
+    tagged_hash_values = @tagged_hash.values
+    counts = Hash.new(0)
+    tagged_hash_values.each { |v| counts[v] += 1 }
+    @pos_count = counts
     # words = 314 (pages)
     # words = 312 (word)
     # words = 317 (word count tool)

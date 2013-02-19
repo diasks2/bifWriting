@@ -4,6 +4,9 @@ gem 'rails', '3.2.12'
 gem 'seed-fu'
 gem 'punkt-segmenter'
 gem 'engtagger', :git=> 'git://github.com/diasks2/engtagger.git'
+gem 'redcarpet'
+gem 'garlicjs-rails'
+gem 'localstorageshim-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

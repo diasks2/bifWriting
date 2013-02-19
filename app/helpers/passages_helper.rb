@@ -1,5 +1,5 @@
+# -*- encoding : utf-8 -*-
 module PassagesHelper
-
   def pos_convert(pos)
 	case pos
   	  when "cc"
@@ -36,4 +36,4 @@ module PassagesHelper
    	  	return pos	
 	end
   end
-end
+end  

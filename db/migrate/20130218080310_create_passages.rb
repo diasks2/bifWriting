@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreatePassages < ActiveRecord::Migration
   def change
     create_table :passages do |t|
